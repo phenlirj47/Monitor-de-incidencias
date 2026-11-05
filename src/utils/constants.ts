@@ -1,0 +1,105 @@
+import { CommentTemplate, SupervisorMapping } from '../types';
+
+export const DEFAULT_SUPERVISOR_CATALOG: SupervisorMapping[] = [
+  { mensajero: 'Correa Brian', supervisor: 'Alfonso Correa' },
+  { mensajero: 'Castulo Ricardo', supervisor: 'Alfonso Correa' },
+  { mensajero: 'Correa Hugo', supervisor: 'Alfonso Correa' },
+  { mensajero: 'Jaime Guillermo', supervisor: 'Por asignar' },
+  { mensajero: 'González Gabriel', supervisor: 'Por asignar' },
+  { mensajero: 'Sanchez Martin', supervisor: 'Por asignar' },
+  { mensajero: 'Grimaldo Enrique', supervisor: 'Por asignar' },
+];
+
+export const DEFAULT_TEMPLATES: CommentTemplate[] = [
+  {
+    id: 't-fachada-1',
+    titulo: 'Sí acudió - Foto fachada',
+    texto: 'Si acudió al domicilio - comparte foto de la fachada',
+    categoria: 'fachada',
+    semaforoSugerido: 1,
+  },
+  {
+    id: 't-labor',
+    titulo: 'Labor (Sí acudió)',
+    texto: 'Incidencia en entrega (Labor) - acudió a domicilio',
+    categoria: 'fachada',
+    semaforoSugerido: 1,
+  },
+  {
+    id: 't-reprogramar',
+    titulo: 'Reprogramar entrega',
+    texto: 'Cliente solicita reprogramar entrega',
+    categoria: 'general',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-cancelar',
+    titulo: 'Cliente cancela pedido',
+    texto: 'Cliente cancela el pedido',
+    categoria: 'cliente',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-manifiesto-1',
+    titulo: 'Llamar antes de entrega',
+    texto: 'Manifiesto indica llamar antes de la entrega',
+    categoria: 'manifiesto',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-cliente-no-sale',
+    titulo: 'No contesta / no sale nadie',
+    texto: 'El titular no contesta llamadas y no sale nadie en el domicilio',
+    categoria: 'cliente',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-sin-dinero',
+    titulo: 'Sin dinero',
+    texto: 'Sin dinero',
+    categoria: 'cliente',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-no-lo-quiere',
+    titulo: 'No lo quiere / Rechazo',
+    texto: 'No lo quiere',
+    categoria: 'cliente',
+    semaforoSugerido: 2,
+  },
+  {
+    id: 't-ya-lo-recibio',
+    titulo: 'Ya lo recibió',
+    texto: 'Ya lo recibió',
+    categoria: 'cliente',
+    semaforoSugerido: 1,
+  },
+  {
+    id: 't-evidencia-borrosa',
+    titulo: 'Evidencia borrosa',
+    texto: 'Foto de evidencia borrosa / no se aprecia fachada ni número oficial',
+    categoria: 'sin_gestion',
+    semaforoSugerido: 3,
+  },
+  {
+    id: 't-evidencia-incorrecta',
+    titulo: 'Evidencia incorrecta',
+    texto: 'Evidencia no corresponde al domicilio asignado',
+    categoria: 'sin_gestion',
+    semaforoSugerido: 3,
+  },
+  {
+    id: 't-sin-gestion-1',
+    titulo: 'Sin gestión / Sin evidencia',
+    texto: 'No gestionó ruta completa, por lo tanto no hay evidencia',
+    categoria: 'sin_gestion',
+    semaforoSugerido: 3,
+  },
+  {
+    id: 't-whatsapp-acuerdo',
+    titulo: 'Acuerdo vía WhatsApp',
+    texto: 'Reportado por WhatsApp: Cliente confirma reprogramación de entrega',
+    categoria: 'general',
+    semaforoSugerido: 2,
+  },
+];

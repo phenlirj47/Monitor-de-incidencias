@@ -1,0 +1,6 @@
+{
+  "name": "Monitor de Incidencias - CV Directo",
+  "description": "Automatización y generación del reporte de monitoreo de incidencias de entregas a partir de archivos de Dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
